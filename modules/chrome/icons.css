@@ -521,7 +521,8 @@
 
 /* Force injected menus to stay on the far left */
 :root[zen-compact-mode="true"] #nav-bar-overflow-button,
-:root[zen-compact-mode="true"] #zen-workspaces-button {
+:root[zen-compact-mode="true"] #zen-workspaces-button,
+:root[zen-compact-mode="true"] #PanelUI-button {
   order: -2 !important;
 }
 
