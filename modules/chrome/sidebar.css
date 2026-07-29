@@ -690,3 +690,13 @@ scrollbox {
   ) !important;
 }
 */
+
+/* -------------------------- SMALL SIDEBAR -------------------------- */
+@media (-moz-pref("arc-small-sidebar")) {
+  :root[zen-compact-mode="true"] #navigator-toolbox #titlebar,
+  :root[zen-compact-mode="true"] #navigator-toolbox #zen-toolbar-background {
+    top: var(--zen-element-separation, 12px) !important;
+    height: calc(100% - (var(--zen-element-separation, 12px) * 2)) !important;
+    border-radius: var(--arc-border-radius, 12px) !important;
+  }
+}
