@@ -693,10 +693,18 @@ scrollbox {
 
 /* -------------------------- SMALL SIDEBAR -------------------------- */
 @media (-moz-pref("arc-small-sidebar")) {
-  :root[zen-compact-mode="true"] #navigator-toolbox #titlebar,
-  :root[zen-compact-mode="true"] #navigator-toolbox #zen-toolbar-background {
-    top: var(--zen-element-separation, 12px) !important;
+  :root[zen-compact-mode="true"] #navigator-toolbox,
+  :root:not([zen-compact-mode="true"]) #sidebar-box {
+    margin-top: var(--zen-element-separation, 12px) !important;
+    margin-bottom: var(--zen-element-separation, 12px) !important;
+    margin-left: var(--zen-element-separation, 12px) !important;
     height: calc(100% - (var(--zen-element-separation, 12px) * 2)) !important;
+    border-radius: var(--arc-border-radius, 12px) !important;
+  }
+
+  :root[zen-compact-mode="true"] #navigator-toolbox #titlebar,
+  :root[zen-compact-mode="true"] #navigator-toolbox #zen-toolbar-background,
+  :root:not([zen-compact-mode="true"]) #sidebar-box {
     border-radius: var(--arc-border-radius, 12px) !important;
   }
 }
