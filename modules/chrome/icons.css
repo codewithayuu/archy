@@ -517,6 +517,12 @@
 }
 
 
+/* ------------------------- WINDOW CONTROLS ------------------------- */
+
+.titlebar-buttonbox-container {
+  order: 10 !important;
+}
+
 /* ------------------------- WINDOWS BUTTONS ------------------------- */
 
 @media (-moz-pref("arc-macos-style-buttons")) {
