@@ -519,8 +519,14 @@
 
 /* ------------------------- WINDOW CONTROLS ------------------------- */
 
+/* Force injected menus to stay on the far left */
+:root[zen-compact-mode="true"] #nav-bar-overflow-button,
+:root[zen-compact-mode="true"] #zen-workspaces-button {
+  order: -2 !important;
+}
+
 .titlebar-buttonbox-container {
-  order: 10 !important;
+  order: -1 !important;
 }
 
 /* ------------------------- WINDOWS BUTTONS ------------------------- */
