@@ -695,10 +695,10 @@ scrollbox {
 @media (-moz-pref("arc-small-sidebar")) {
   :root[zen-compact-mode="true"] #navigator-toolbox,
   :root:not([zen-compact-mode="true"]) #sidebar-box {
-    margin-top: calc(var(--zen-element-separation, 12px) * 2) !important;
-    margin-bottom: var(--zen-element-separation, 12px) !important;
+    margin-top: var(--arc-small-sidebar-top, 24px) !important;
+    margin-bottom: var(--arc-small-sidebar-bottom, 12px) !important;
     margin-left: var(--zen-element-separation, 12px) !important;
-    height: calc(100% - (var(--zen-element-separation, 12px) * 3)) !important;
+    height: calc(100% - var(--arc-small-sidebar-top, 24px) - var(--arc-small-sidebar-bottom, 12px)) !important;
     border-radius: var(--arc-border-radius, 12px) !important;
   }
 

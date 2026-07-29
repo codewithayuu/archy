@@ -18,6 +18,20 @@
     "defaultValue": false
   },
   {
+    "type": "string",
+    "label": "Small Sidebar Top Margin (requires Small Sidebar enabled, e.g. 24px).",
+    "property": "arc-small-sidebar-top",
+    "defaultValue": "24px",
+    "placeholder": "24px"
+  },
+  {
+    "type": "string",
+    "label": "Small Sidebar Bottom Margin (requires Small Sidebar enabled, e.g. 12px).",
+    "property": "arc-small-sidebar-bottom",
+    "defaultValue": "12px",
+    "placeholder": "12px"
+  },
+  {
     "type": "checkbox",
     "label": "Enable *Custom Menu Opacity*.",
     "property": "arc-menu-opacity",
