@@ -519,8 +519,22 @@
 
 /* ------------------------- WINDOW CONTROLS ------------------------- */
 
+/* Force specific order so menus appear before window controls */
+:root[zen-compact-mode="true"] #PanelUI-button {
+  order: -3 !important;
+}
+
+:root[zen-compact-mode="true"] #PanelUI-menu-button {
+  order: -3 !important;
+}
+
+:root[zen-compact-mode="true"] #sidebar-button,
+:root[zen-compact-mode="true"] #zen-sidebar-button {
+  order: -2 !important;
+}
+
 .titlebar-buttonbox-container {
-  order: -1 !important; /* Force to the extreme left, before any injected menus */
+  order: -1 !important;
 }
 
 .titlebar-buttonbox {
