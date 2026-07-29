@@ -517,7 +517,16 @@
 }
 
 
-/* ------------------------- WINDOWS BUTTONS ------------------------- */
+/* ------------------------- WINDOW CONTROLS ------------------------- */
+
+.titlebar-buttonbox-container {
+  order: -1 !important; /* Force to the extreme left, before any injected menus */
+}
+
+.titlebar-buttonbox {
+  scale: 0.85 !important;
+  margin-top: 10px !important;
+}
 
 @media (-moz-pref("arc-macos-style-buttons")) {
   .titlebar-buttonbox {
